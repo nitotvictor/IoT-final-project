@@ -3,8 +3,8 @@
 #include "freertos/FreeRTOS.h" //explain
 #include "freertos/task.h" //explain
 
-static esp_adc_cal_characteristics_t *adc_chars; //pointer that will point to esp_adc_cal_characterize which is ADC characterisitics storage place.
-static mcp9700_t mcp9700;//instance of mcp9700 object
+static esp_adc_cal_characteristics_t *adc_chars; //pointer that will point to the place in memory where the ADC characterisitics will be stored
+static mcp9700_t mcp9700;//create a static instance of the mcp9700 object, static means that this instance cannot be used from out of this file
 
 void mcp9700_init(adc_unit_t unit, adc_channel_t channel)
 {
