@@ -18,8 +18,8 @@ typedef struct mcp9700
     esp_adc_cal_characteristics_t adc_chars;
 } mcp9700_t;
 
-/* function prototypes */
-void    mcp9700_init(adc_unit_t, adc_channel_t);
-int32_t mcp9700_get_value();
+// function prototypes
+void    mcp9700_init(adc_unit_t, adc_channel_t); //init will be used in the main
+int32_t mcp9700_get_value(); //get value will be used in the main
 
-#endif /* __MPC977_H__ */
+#endif 
